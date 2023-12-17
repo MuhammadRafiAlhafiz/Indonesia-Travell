@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Travel</title>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="/src/css/style.css">
+
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+</head>
+<body>
+    <nav class=" px-8 py-3 font-Source md:py-5 absolute top-0 z-20 w-full font-poppins ">
+        <div class="flex items-center justify-between">
+            <span class="flex items-center space-x-2 md:space-x-3 py-1 z-10  md:py-0">
+                <img src="assets/logo.png" alt="logo" class="w-12">
+                <p class="font-bold text-md uppercase lg:ml-20 md:text-lg mt-1.5 text-gray-400">Indonesian Travel</p>
+            </span>
+            <ul class="hidden md:hiddenlg:flex item-center space-x-10  lg:mr-20 text-gray-400 tracking-wide md:flex">
+                <li >
+                    <a href="#home" class="font-extrabold  text-navbar">Home</a>
+                </li>
+                <li class="hover:scale-105 hover:text-navbar transition duration-700 ease-in-out">
+                    <a href="#destination">Recomended Place</a>
+                </li>
+                <li class="hover:scale-105 hover:text-navbar transition duration-700 ease-in-out">
+                    <a href="#hotel">Hotel</a>
+                </li>
+            </ul>
+           
+        </div>
+
+        <!-- hamburger menu -->
+        <div class="flex items-center px-4 relative">
+            <button id="hamburger" name="hamburger" type="button" class="block absolute bottom-1 right-4 z-[999999] lg:hidden ">
+                <span class="hamburger-menu transistion duration-300 ease-in-out origin-top-left"></span>
+                <span class="hamburger-menu transistion duration-300 ease-in-out"></span>
+                <span class="hamburger-menu transistion duration-300 ease-in-out origin-bottom-left"></span>
+
+            </button>
+
+        </div>
+      
+        <div id="nav-menu" class="hidden lg:hidden absolute top-0  right-0  min-h-screen w-full bg-navbar">
+            <ul class=" p-10 space-y-7 font-extralight text-white">
+                <span class="block cursor-pointer mt-14">
+                    <li>
+                        <a href="#home" >Home</a>
+                    </li>
+                </span>
+                <span class="block cursor-pointer">
+                    <li>
+                        <a href="#destination">Recomended Place</a>
+                    </li>
+                </span>
+                <span class="block cursor-pointer">
+                    <li>
+                        <a href="#hotel">Hotel</a>
+                    </li>
+                </span>
+            </ul>
+
+        </div>
+    </nav>
+    
+    <!-- section home -->
+    <section id="home">
+        
+        <div class="swiper mySwiper">
+            
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="bg-cover bg-center h-screen brightness-50" style="background-image: url('assets/bg-4.jpg');">
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-cover bg-center h-screen brightness-50" style="background-image: url('assets/bg-5.jpg');"></div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-cover bg-center h-screen brightness-50" style="background-image: url('assets/bg-1.jpg');"></div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <div class="bg-cover bg-center h-screen brightness-50" style="background-image: url('assets/bg-2.jpg');"></div>
+                    
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+    <!-- end section home -->
+
+    <!-- section destination -->
+    <section id="destination" class="px-10 py-24 min-h-screen lg:px-0">
+        <h1 class="text-center uppercase mb-20 font-extrabold text-3xl" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300"  data-aos-easing="ease-out-back" >Recomended Destination</h1>
+        <!-- jogja -->
+        <div class="flex flex-col w-full lg:flex-row" >
+            <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300"  data-aos-easing="ease-out-back">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide w-20">
+                        <img src="assets/jogja-1.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/jogja-2.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/jogja-3.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+            <div class="flex flex-col p-10 mb-10 lg:w-5/12 md:h-[350px] lg:px-12 lg:mx-10 bg-card md:rounded-md rounded-b-lg md:my-16" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300"  data-aos-easing="ease-out-back">
+                <h1 class="text-xl font-semibold" >Yogyakarta</h1>
+                <p class="text-sm text-regal-blue/80 my-5 text-justify">Yogyakarta atau bisa di sebut dengan kota pelajar memliki banyak destinasi dan kebudayaan yang membuat kota ini sangat di pandang beda oleh masyarakat lokal maupun non-lokal sehingga ada daya tarik berbeda untuk kota Yogyakarta </p>
+                <a href="jogja.html" class=" w-full md:w-[269px] px-7 py-3 tracking-wider rounded-md text-sm text-center hover:bg-white/5 hover:backdrop-blur-sm shadow-md z-10 bg-white/20">View All</a>
+               
+            </div>
+            
+        </div>
+
+        <!-- Bali -->
+        <div class="flex flex-col w-full my-10 lg:flex-row-reverse font-DM lg:mr-10 lg:pr-12" >
+            <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300"  data-aos-easing="ease-out-back">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide w-20">
+                        <img src="assets/bali-1.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/bali-2.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/bali-3.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+            <div class="flex flex-col p-10 mb-10 lg:w-5/12 md:h-[350px] lg:px-12 lg:mx-10 bg-card md:rounded-md rounded-b-lg md:my-16" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300"  data-aos-easing="ease-out-back">
+                <h1 class="text-xl font-semibold">BALI</h1>
+                <p class="text-sm text-regal-blue/80 my-5 text-justify">Bali atau di juluki sebagai Pulau Dewata menyuguhkan beberapa View Eksotis yang dapat menarik daya minat para wisatawan lokal maupun non-lokal sehinggan daerah bali adalah daerah yang di gemari para touris dari macam negara</p>
+                <a href="bali.html" class=" w-full md:w-[269px] px-7 py-3 tracking-wider rounded-md text-sm text-center hover:bg-white/5 hover:backdrop-blur-sm shadow-md z-10 bg-white/20">View All</a>
+            </div>
+            
+        </div>
+        <!-- end bali -->
+
+        <!-- Labuan Bajo -->
+        <div class="flex flex-col w-full lg:flex-row">
+            <div class="swiper mySwiper" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300"  data-aos-easing="ease-out-back">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide w-20">
+                        <img src="assets/labuan-1.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none" >
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/labuan-2.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/labuan-3.jpg" alt="" class="brightness-50 rounded-t-lg md:rounded-none">
+                    </div>
+                </div>
+            </div> 
+            <div class="flex flex-col p-10 mb-10 lg:w-5/12 md:h-[350px] md:my-16 lg:px-12 lg:mx-10 bg-card md:rounded-md rounded-b-lg" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300"  data-aos-easing="ease-out-back">
+                <h1 class="text-xl font-semibold">LABUAN BAJO</h1>
+                <p class="text-sm text-regal-blue/80 my-5 text-justify">Labuan Bajo disebut juga dengan Island Of Comodo yang membuat wisata atau daerah ini unik dan mempunyai icon tersendiri di daerah ini.Daerah ini juga menampilkan pemandangan dan view yang sangat indah dan menjadi tempat ter-favorite untuk di kunjungi </p>
+                <a href="labuanbajo.html" class=" w-full md:w-[269px] px-7 py-3 tracking-wider rounded-md text-sm text-center hover:bg-white/5 hover:backdrop-blur-sm shadow-md z-10 bg-white/20">View All</a>
+               
+            </div>
+ 
+        </div>
+        <!-- end Labuan Bajo -->
+    </section>
+
+    <section id="hotel" class="px-10 py-24 lg:mt-40 lg:mx-10 lg:px-12">
+        <h1 class="text-center font-extrabold text-3xl mb-20 uppercase" >Recomended Hotel</h1>
+        <div x-data="{ activeTab: 1 }">
+            <div class="flex justify-center items-center md:gap-10 bg-white shadow-lg rounded-2xl h-[100px]">
+                <button x-on:click="activeTab = 1" :class="{ 'bg-card backdrop-blur-sm rounded-md ease-out duration-700': activeTab === 1 }" class="text-black uppercase font-semibold py-2 px-4">Yogyakarta</button>
+                <button x-on:click="activeTab = 2" :class="{ 'bg-card backdrop-blur-sm rounded-md ease-out duration-700': activeTab === 2 }" class="text-black uppercase font-semibold py-2 px-4">Bali</button>
+                <button x-on:click="activeTab = 3" :class="{ 'bg-card backdrop-blur-sm rounded-md ease-out duration-700': activeTab === 3 }" class="text-black uppercase font-semibold py-2 px-4">Labuan Bajo</button>
+            </div>
+            
+            <!-- hotel jogja -->
+            <div x-show="activeTab === 1" class="py-4 transition delay-700 duration-300 ease-in-out">
+                <div class=" flex flex-col lg:flex-row gap-5 my-10" >
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col" >
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-jogja-4.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">Hotel Tentrem Yogyakarta</h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">Semua orang butuh beristirahat. Untuk wisatawan yang mengunjungi Yogyakarta, Hotel Tentrem Yogyakarta merupakan pilihan terbaik untuk beristirahat dan memulihkan diri. Terkenal akan suasana yang mewah dan lokasinya yang dekat dengan restoran dan tempat terkenal, Hotel Tentrem Yogyakarta membuat Anda mudah untuk menikmati Yogyakarta yang terbaik.</p>
+                            <a href="hotel/hoteljogja.html" class="md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col">
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-jogja-2.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">The Manohara Hotel Yogyakarta</h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">Semua orang butuh beristirahat. Untuk wisatawan yang mengunjungi Yogyakarta, Hotel Tentrem Yogyakarta merupakan pilihan terbaik untuk beristirahat dan memulihkan diri. Terkenal akan suasana yang mewah dan lokasinya yang dekat dengan restoran dan tempat terkenal, Hotel Tentrem Yogyakarta membuat Anda mudah untuk menikmati Yogyakarta yang terbaik.</p>
+                            <a href="hotel/hoteljogja-1.html" class="md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col">
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-jogja-3.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">Yogyakarta Marriott Hotel
+                            </h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">Jika anda mencari suasana hotel mewah di Depok, coba lihat Yogyakarta Marriott Hotel.Berdekatan dengan Masjid Kampus UGM (2,4 km), sebuah tempat terkenal di Depok, Yogyakarta Marriott Hotel adalah destinasi yang sangat baik untuk turis. Yogyakarta Marriott Hotel menawarkan para tamu fasilitas beragam seperti tv layar datar, kulkas, dan penyejuk udara, dan mudah untuk terhubung dengan internet</p>
+                            <a href="/public/hotel/hoteljogja-2.html"  class=" md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- hotel bali -->
+            <div x-show="activeTab === 2" class="py-4">
+                <div class=" flex flex-col lg:flex-row gap-5 my-10" >
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col" >
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-bali-1.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">Padma Resort Ubud</h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">Padma Resort Ubud merupakan pilihan yang tepat ketika mengunjungi Payangan. Merupakan perpaduan sempurna antara penghematan dan kenyamanan, properti ini menawarkan suasana yang sesuai untuk keluarga dengan fasilitas yang di desain untuk wisatawan seperti Anda. para tamu Padma Resort Ubud dapat mengunjungi salah satu lokasi populer di Payangan.</p>
+                            <a href="/public/hotel/hotelbali-1.html"  class="md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col">
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-bali-2.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">The Kayon Jungle Resort</h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">Semua orang butuh beristirahat. Untuk wisatawan yang mengunjungi Ubud, The Kayon Jungle Resort merupakan pilihan terbaik untuk beristirahat dan memulihkan diri. Terkenal akan suasana yang mewah dan lokasinya yang dekat dengan restoran dan tempat terkenal, The Kayon Jungle Resort membuat Anda mudah untuk menikmati Ubud yang terbaik..</p>
+                            <a href="/public/hotel/hotelbali-2.html" class="md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col">
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-bali-3-jpg.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">Meliá Bali
+                            </h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">Jika anda mencari suasana hotel mewah di Depok, coba lihat Yogyakarta Marriott Hotel.Berdekatan dengan Masjid Kampus UGM (2,4 km), sebuah tempat terkenal di Depok, Yogyakarta Marriott Hotel adalah destinasi yang sangat baik untuk turis. Yogyakarta Marriott Hotel menawarkan para tamu fasilitas beragam seperti tv layar datar, kulkas, dan penyejuk udara, dan mudah untuk terhubung dengan internet</p>
+                            <a href="/public/hotel/hotelbali-3.html" class=" md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- hotel labuan bajo -->
+            <div x-show="activeTab === 3" class="py-4">
+                <div class=" flex flex-col lg:flex-row gap-5 my-10" >
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col" >
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-labuan-bajo-1.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">AYANA Komodo Resort, Waecicu Beach</h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">AYANA Komodo Resort merupakan pilihan yang tepat ketika mengunjungi Labuan Bajo. Merupakan perpaduan sempurna antara penghematan dan kenyamanan, properti ini menawarkan suasana yang romantis dengan fasilitas yang di desain untuk wisatawan seperti Anda.
+                                AYANA Komodo Resort menawarkan para tamu fasilitas beragam seperti penyejuk udara, dan mudah untuk terhubung dengan internet, karena tersedia wi-fi gratis.</p>
+                            <a href="/public/hotel/hotelbajo-1.html" class="md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col">
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-labuan-bajo-2.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">Plataran Komodo Resort & Spa</h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">Semua orang butuh beristirahat. Untuk wisatawan yang mengunjungi Labuan Bajo, Plataran Komodo Resort merupakan pilihan terbaik untuk beristirahat dan memulihkan diri. Internet gratis ditawarkan untuk para tamu, dan kamar di Plataran Komodo Resort memiliki tv layar datar, minibar, dan kulkas.Selama Anda menginap, gunakan fasilitas yang ditawarkan, seperti resepsionis 24 jam, layanan concierge, dan layanan kamar.</p>
+                            <a href="/public/hotel/hotelbajo-2.html" class="md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                    <div class="card-project" data-aos="fade-up" data-aos-easing="ease-out-linear"data-aos-duration="2000">
+                        <div class="flex flex-col">
+                            <span class="flex items-center justify-center mb-10">
+                                <img src="assets/hotel-labuan-bajo-3.jpg" alt="" class="w-90 rounded-t-lg">
+                            </span>
+                            <h4 class="mt-4 ml-5 text-xl font-semibold">Sudamala Resort, Komodo, Labuan Bajo
+                            </h4>
+                            <span class="flex-col ml-5">
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffdd00;"></i>
+                            </span>
+                            <p class="text-sm text-justify mx-5 mt-4">Semua orang butuh beristirahat. Untuk wisatawan yang mengunjungi Labuan Bajo, Plataran Komodo Resort merupakan pilihan terbaik untuk beristirahat dan memulihkan diri.Internet gratis ditawarkan untuk para tamu, dan kamar di Plataran Komodo Resort memiliki tv layar datar, minibar, dan kulkas.</p>
+                            <a href="/public/hotel/hotelbajo-3.html" class=" md:ml-32 ml-24 uppercase text-sm my-5 text-center bg-black/5 backdrop-blur py-3 px-8 rounded-xl max-w-max ">Reservasi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class=" px-7 lg:px-24  text-black pt-10 pb-2 bg-card rounded-tr-3xl font-DM">
+        <div class="flex flex-col justify-between lg:flex-row">
+            <div class="w-full md:w-5/12">
+                <h1 class="my-5 text-white  text-lg">Tujuan Indonesian Travel</h1>
+                <p class="mb-8 text-white/80 text-justify text-sm lg:mb-5">Tujuan di buatnya Indonesian Travel untuk memudahkan Torist dalam negara Maupun mancanegara agar memudahkan meng-eksplore Tempat-Tempat ter-Recomendasi yang ada di indonesia sehingga Perjalanan Travel Menjadi Lebih Berkesan Untuk anda</p>
+            </div>
+        </div>
+        
+        <img src="assets/Rectangle.png" alt="" class="my-5">
+
+        <div class="block lg:flex justify-between">
+            <div class="w-full lg:w-4/12">
+                <img src="assets/logo.png" alt="" class="mb-1">
+                <h2 class="text-lg text-white/80 my-2 ">Indonesian Travel</h2>
+                <p class="text-xs leading-6 text-white/80 text-justify">
+                    Indonesia Travel adalah sebuah situs website untuk mencari informasi pariwisata di indonesia
+                </p>
+            </div>
+    
+            <div class="flex justify-around space-x-5 w-full ml-0 mt-10 lg:mt-0 lg:ml-24 ">
+                <div class="block text-white/80">
+                    <h5 class="uppercase text-sm md:text-lg mb-4 ">
+                        Founder
+                    </h5>
+                    <ul class="text-white/80">
+                        <li class="block text-xs md:text-sm mb-1.5 ">
+                            <a href="">Muhammad Mardiyansah</a>
+                        </li>
+                        <li class="block text-xs md:text-sm mb-1.5 ">
+                            <a href="">Muhammad Rafi Al Hafiz</a>
+                        </li>
+                        <li class="block text-xs md:text-sm mb-1.5 ">
+                            <a href="">Rafi Adli Rudianto</a>
+                        </li>
+                    </ul>
+        
+                </div> 
+    
+            </div>  
+        </div>
+
+        <img src="assets/Rectangle.png" alt="" class="my-3">
+        <h5 class="text-xs text-center text-white/50 py-1 lg:py-3">
+            COPYRIGHT © 2023 - Indonesian Travel
+        </h5>
+
+    
+    </footer> 
+
+        <!-- back to top button -->
+        <a href="#home" class="fixed hidden bottom-4 right-4 h-12 w-12 bg-black/20 backdrop-blur-md shadow-2xl rounded-full p-4 hover:animate-pulse " id="to-top">
+            <img src="assets/up arrow.png" alt="">
+        </a>
+        <!-- end back to top button -->
+    <!-- end section destination -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/ec8fa3a56d.js" crossorigin="anonymous"></script>
+</body>
+</html>
